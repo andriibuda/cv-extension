@@ -1,7 +1,9 @@
 .popup {
-  width: 300px;
+  width: 800px;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: monospace;
+  background-color: #000;
+  color: #fff;
 }
 
 h1 {
@@ -14,4 +16,13 @@ p {
   font-size: 14px;
   color: #666;
   margin: 0;
+}
+
+.ascii-art {
+  margin: 0;
+  white-space: pre;
+  font-size: 8px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-family: monospace;
 }
