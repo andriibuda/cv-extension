@@ -47,9 +47,10 @@ const ASCII_ART = `⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿�
 ⣿⣤⣄⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⠿⠿⠛⠛⠛⠉⣁⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`;
 
 const Popup: React.FC = () => {
+  const [state,SetState] = React.useState(ASCII_ART)
   return (
     <div className="popup">
-      <pre className="ascii-art">{ASCII_ART}</pre>
+      <button>Click Me</button>
     </div>
   );
 };
