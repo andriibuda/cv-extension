@@ -21,6 +21,7 @@ const Popup: React.FC = () => {
   };
 
   return (
+    <>
     <div className="popup">
       <button onClick={handleClick} disabled={loading}>
         {loading ? "Loading..." : "Get Value from Server"}
@@ -32,6 +33,7 @@ const Popup: React.FC = () => {
         </pre>
       )}
     </div>
+    </>
   );
 };
 
