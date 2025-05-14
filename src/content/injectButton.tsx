@@ -10,7 +10,7 @@ const mountButton = () => {
     const res = await fetch("http://localhost:3001/api/generate-cv", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "text/html",
         "Accept": "text/html"
       },
       body: document.querySelector("#job-details")?.innerHTML
