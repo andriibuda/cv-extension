@@ -5,8 +5,16 @@ const mountButton = () => {
   button.setAttribute('data-resume-button', 'true');
   button.textContent = 'Generate Resume';
   button.className = 'jobs-save-button artdeco-button artdeco-button--2 artdeco-button--secondary artdeco-button--3';
-  button.style.marginLeft = '8px';
-  button.onclick = () => alert('Resume generation started!');
+  button.style.marginLeft = '10px';
+  button.onclick = async() => {
+    const res = await fetch("http://localhost:3001/api/generate-cv", {
+      method: "POST",
+      headers: {
+        "Content-Type": "text/html",
+        "Accept": "text/html"
+      },
+      body: document.querySelector("#job-details")?.innerHTML
+  })}
   targetFlexRow.appendChild(button);
 };
 
