@@ -13,7 +13,7 @@ const mountButton = () => {
         "Content-Type": "text/html",
         "Accept": "text/html"
       },
-      body: document.querySelector("#job-details")?.innerHTML
+      body: document.querySelector("#job-details")?.textContent 
   })}
   targetFlexRow.appendChild(button);
 };
