@@ -1,12 +1,4 @@
 
-
-# Chrome Extension with React
-
-This is a Chrome extension built with React and TypeScript. The extension provides a modern development environment with hot reloading and efficient build process.
-
-## Features
-
-
 - React 18 with TypeScript support
 - Webpack 5 for bundling
 - Hot reloading during development
