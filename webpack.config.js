@@ -5,10 +5,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    popup: "./src/popup/index.tsx",
-    background: "./src/background/index.ts",
-    content: "./src/content/index.ts",
-    injectButton: "./src/content/injectButton.tsx"
+    popup: "./extension/src/popup/index.tsx",
+    background: "./extension/src/background/index.ts",
+    content: "./extension/src/content/index.ts",
+    injectButton: "./extension/src/content/injectButton.tsx"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -33,10 +33,10 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: "public" }],
+      patterns: [{ from: "extension/public" }],
     }),
     new HtmlWebpackPlugin({
-      template: "./src/popup/index.html",
+      template: "./extension/src/popup/index.html",
       filename: "popup.html",
       chunks: ["popup"],
     }),
