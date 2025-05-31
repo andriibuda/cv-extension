@@ -39,3 +39,5 @@ const observer = new MutationObserver(() => {
   mountButton();
 });
 observer.observe(document.body, { childList: true, subtree: true });
+
+console.log("!!!!!!!!!Script loaded and observer started!!!!!!!!!");
