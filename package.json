@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "Chrome Extension with React",
   "scripts": {
+    "dev": "nodemon   backend/server.js",
     "start": "webpack --watch --config webpack.config.js",
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "docxtemplater": "^3.63.2",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "multer": "^2.0.0",
+    "nodemon": "^3.1.10",
     "openai": "^4.103.0",
+    "pizzip": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

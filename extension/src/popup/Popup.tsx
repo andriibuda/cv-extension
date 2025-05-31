@@ -9,7 +9,7 @@ const Popup: React.FC = () => {
     <div className="popup">
       <h1>Generate Resume</h1>
       <form 
-      action="http://localhost:3001/api/upload" 
+      action="http://localhost:3001/api/generate-cv" 
       method="POST"
       encType="multipart/form-data"
       >

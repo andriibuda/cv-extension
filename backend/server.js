@@ -3,18 +3,17 @@ const cors = require("cors");
 require("dotenv").config();
 
 // Import route handlers
-const uploadRoute = require("./routes/upload");
-const generateCvRoute = require("./routes/generateCv");
+const generateCvRoute = require("./routes/controller");
 
 const app = express();
 const port = 3001;
 
 // Middleware to handle CORS and plain text bodies
 app.use(cors());
-app.use(express.text({ type: "text/html" }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Routes 
-app.use("/api/upload", uploadRoute);         // Handle file uploads
 app.use("/api/generate-cv", generateCvRoute); // Handle OpenAI resume generation
 
 
