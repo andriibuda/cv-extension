@@ -15,5 +15,6 @@
     "jsx": "react-jsx",
     "outDir": "./dist"
   },
-  "include": ["src"]
+  "include": ["extension/src"],
+  "exclude": ["node_modules", "backend", "dist"]
 }
