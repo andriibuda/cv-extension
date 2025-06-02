@@ -74,13 +74,11 @@ router.post("/", async (req, res) => {
 
 
     // Extract response
-    // const data = new Date();
-    // console.log("GPt begin",data.toLocaleTimeString());
+
     const resultText = chatCompletion.choices[0].message.content;
-    console.log("Raw GPT response:", resultText);
-    // console.log("GPt end",data.toLocaleTimeString());
+    
+
     const dataSections = JSON.parse(resultText);
-    console.log("GPT response:", dataSections);
 
 
 
